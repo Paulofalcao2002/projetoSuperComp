@@ -25,7 +25,7 @@ vector<vector<int>> lerGrafo(const string &nomeArquivo, int &numVertices) {
 
 // Função para descobrir a clique máxima
 vector<int> encontrarCliqueMaxima(const vector<vector<int>> &grafo,
-                                  int numVertices) {
+                                  int numVertices, int indiceAlvo) {
   vector<int> cliqueMaxima;
   vector<int> candidatos;
 
@@ -33,9 +33,16 @@ vector<int> encontrarCliqueMaxima(const vector<vector<int>> &grafo,
     candidatos.push_back(i);
   }
 
+  int v = candidatos[indiceAlvo];
+  candidatos.erase(candidatos.begin() + indiceAlvo);
+
+  bool isTaget = true;
+
   while (candidatos.size() != 0) {
-    int v = candidatos[candidatos.size() - 1];
-    candidatos.pop_back();
+    if (!isTaget) {
+      v = candidatos[candidatos.size() - 1];
+      candidatos.pop_back();
+    }
 
     bool podeAdicionar = true;
 
@@ -70,6 +77,7 @@ vector<int> encontrarCliqueMaxima(const vector<vector<int>> &grafo,
       }
       candidatos = novosCandidatos;
     }
+    isTaget = false;
   }
 
   return cliqueMaxima;
@@ -79,7 +87,7 @@ int main() {
   int numVertices;
   vector<vector<int>> grafo = lerGrafo("grafo.txt", numVertices);
 
-  vector<int> cliqueMaxima = encontrarCliqueMaxima(grafo, numVertices);
+  vector<int> cliqueMaxima = encontrarCliqueMaxima(grafo, numVertices, 5);
 
   for (auto vertice : cliqueMaxima) {
     cout << vertice + 1 << " ";
