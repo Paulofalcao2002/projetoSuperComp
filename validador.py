@@ -21,3 +21,4 @@ for clique in cliques_maximais:
     print(clique)
 
 print("Clique máxima encontrada:", clique_maxima)
+print("Tamanho", len(clique_maxima))
