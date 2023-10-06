@@ -20,5 +20,5 @@ print("Cliques maximais encontradas:")
 for clique in cliques_maximais:
     print(clique)
 
-print("Clique máxima encontrada:", clique_maxima)
+print("Clique máxima encontrada:", sorted(clique_maxima, reverse=True, key=lambda x: int(x)))
 print("Tamanho", len(clique_maxima))

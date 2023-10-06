@@ -28,8 +28,19 @@ vector<vector<int>> lerGrafo(const string &nomeArquivo, int &numVertices) {
 
 // Função recursiva para encontrar a clique máxima
 vector<int> encontrarCliqueMaximaRec(const vector<vector<int>> &grafo,
-                                     int verticeAtual,
-                                     vector<int> &candidatos) {
+                                     int verticeAtual, vector<int> &candidatos,
+                                     unordered_map<string, vector<int>> &memo) {
+
+  // Generate a unique key for this combination of verticeAtual and candidatos
+  string key = to_string(verticeAtual);
+  for (int candidate : candidatos) {
+    key += "_" + to_string(candidate);
+  }
+
+  // Check if the result is memoized
+  if (memo.find(key) != memo.end()) {
+    return memo[key];
+  }
 
   vector<int> cliqueMaximaCandidato;
   cliqueMaximaCandidato.push_back(verticeAtual);
@@ -55,7 +66,7 @@ vector<int> encontrarCliqueMaximaRec(const vector<vector<int>> &grafo,
 
   for (auto novoCandidato : novosCandidatos) {
     vector<int> cliqueNovoCandidato =
-        encontrarCliqueMaximaRec(grafo, novoCandidato, novosCandidatos);
+        encontrarCliqueMaximaRec(grafo, novoCandidato, novosCandidatos, memo);
 
     bool podeAdicionar = true;
 
@@ -75,6 +86,8 @@ vector<int> encontrarCliqueMaximaRec(const vector<vector<int>> &grafo,
     }
   }
 
+  memo[key] = cliqueMaximaCandidato;
+
   return cliqueMaximaCandidato;
 }
 
@@ -84,13 +97,15 @@ vector<int> encontrarCliqueMaxima(const vector<vector<int>> &grafo,
   vector<int> cliqueAtual;
   vector<int> melhorClique;
   vector<int> candidatos;
+  unordered_map<string, vector<int>> memo; // Use a hash table for memoization
+  memo.clear();
 
   for (int i = 0; i < numVertices; i++) {
     candidatos.push_back(i);
   }
 
   for (auto candidato : candidatos) {
-    cliqueAtual = encontrarCliqueMaximaRec(grafo, candidato, candidatos);
+    cliqueAtual = encontrarCliqueMaximaRec(grafo, candidato, candidatos, memo);
     if (cliqueAtual.size() > melhorClique.size()) {
       melhorClique = cliqueAtual;
     }
