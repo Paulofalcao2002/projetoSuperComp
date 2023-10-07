@@ -1,0 +1,2000 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.72742' (creator: callgrind-3.18.1)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 191244422
+Trigger: Program termination
+Profiled target:  ./forca-bruta-recursivo-memoizado (PID 72742, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   forca-bruta-recursivo-memoizado.cpp
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+845,022,223 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+121,086,080 (14.33%)  ???:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace(unsigned long, unsigned long, char const*, unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+ 78,168,298 ( 9.25%)  /usr/include/c++/11/bits/basic_string.h:encontrarCliqueMaximaRec(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, std::vector<int, std::allocator<int> >&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > > >&)'2
+ 64,775,083 ( 7.67%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 64,612,746 ( 7.65%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 55,976,617 ( 6.62%)  ???:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+ 53,336,568 ( 6.31%)  ???:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct(unsigned long, char) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+ 41,354,440 ( 4.89%)  ???:std::_Hash_bytes(void const*, unsigned long, unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+ 40,334,127 ( 4.77%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 35,582,423 ( 4.21%)  forca-bruta-recursivo-memoizado.cpp:encontrarCliqueMaximaRec(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, std::vector<int, std::allocator<int> >&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > > >&)'2 [/home/aluno/SuperComp/projeto/forca-bruta-recursivo-memoizado]
+ 32,517,444 ( 3.85%)  /usr/include/c++/11/bits/charconv.h:encontrarCliqueMaximaRec(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, std::vector<int, std::allocator<int> >&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > > >&)'2
+ 28,733,358 ( 3.40%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 22,371,391 ( 2.65%)  ./malloc/./malloc/malloc.c:_int_malloc [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 21,062,783 ( 2.49%)  ./malloc/./malloc/malloc.c:free [/usr/lib/x86_64-linux-gnu/libc.so.6]
+ 15,100,412 ( 1.79%)  /usr/include/c++/11/bits/stl_vector.h:encontrarCliqueMaximaRec(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, std::vector<int, std::allocator<int> >&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > > >&)'2
+ 14,369,616 ( 1.70%)  ???:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+ 11,488,764 ( 1.36%)  ???:operator new(unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+  9,155,502 ( 1.08%)  /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Map_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [/home/aluno/SuperComp/projeto/forca-bruta-recursivo-memoizado]
+  8,792,771 ( 1.04%)  ./malloc/./malloc/malloc.c:malloc_consolidate [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  8,736,969 ( 1.03%)  ./string/../sysdeps/x86_64/multiarch/memcmp-avx2-movbe.S:__memcmp_avx2_movbe [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  8,500,906 ( 1.01%)  /usr/include/c++/11/bits/vector.tcc:void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) [/home/aluno/SuperComp/projeto/forca-bruta-recursivo-memoizado]
+  8,188,408 ( 0.97%)  /usr/include/c++/11/bits/char_traits.h:encontrarCliqueMaximaRec(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, std::vector<int, std::allocator<int> >&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > > >&)'2
+  5,527,259 ( 0.65%)  /usr/include/c++/11/bits/stl_vector.h:void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+  4,320,352 ( 0.51%)  /usr/include/c++/11/bits/hashtable.h:std::__detail::_Map_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  4,210,416 ( 0.50%)  ???:0x000000000010a4c0 [???]
+  4,136,588 ( 0.49%)  /usr/include/c++/11/ext/new_allocator.h:void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+  4,112,339 ( 0.49%)  /usr/include/c++/11/bits/stl_iterator.h:encontrarCliqueMaximaRec(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, std::vector<int, std::allocator<int> >&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > > >&)'2
+  4,049,865 ( 0.48%)  ???:0x00000000048ef0f0 [???]
+  3,728,436 ( 0.44%)  ???:std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_create(unsigned long&, unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+  3,650,704 ( 0.43%)  ???:0x000000000010a360 [???]
+  3,650,704 ( 0.43%)  ???:0x000000000010a530 [???]
+  3,553,714 ( 0.42%)  ./malloc/./malloc/malloc.c:unlink_chunk.constprop.0 [/usr/lib/x86_64-linux-gnu/libc.so.6]
+  3,201,377 ( 0.38%)  /usr/include/c++/11/bits/stl_uninitialized.h:void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+  2,872,185 ( 0.34%)  ./malloc/./malloc/arena.c:free
+  2,832,224 ( 0.34%)  /usr/include/c++/11/bits/hashtable.h:encontrarCliqueMaximaRec(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, std::vector<int, std::allocator<int> >&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > > >&)'2
+  2,811,581 ( 0.33%)  ???:0x00000000048eb790 [???]
+  2,803,530 ( 0.33%)  /usr/include/c++/11/bits/vector.tcc:std::vector<int, std::allocator<int> >::operator=(std::vector<int, std::allocator<int> > const&) [clone .isra.0] [/home/aluno/SuperComp/projeto/forca-bruta-recursivo-memoizado]
+  2,517,978 ( 0.30%)  /usr/include/c++/11/bits/hashtable_policy.h:encontrarCliqueMaximaRec(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, std::vector<int, std::allocator<int> >&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > > >&)'2
+  2,449,150 ( 0.29%)  /usr/include/c++/11/bits/stl_algobase.h:encontrarCliqueMaximaRec(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, std::vector<int, std::allocator<int> >&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > > >&)'2
+  2,438,205 ( 0.29%)  ???:0x00000000048edad0 [???]
+  1,988,024 ( 0.24%)  /usr/include/c++/11/ext/new_allocator.h:encontrarCliqueMaximaRec(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, std::vector<int, std::allocator<int> >&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > > >&)'2
+  1,914,801 ( 0.23%)  ???:0x00000000048ec0d0 [???]
+  1,914,799 ( 0.23%)  ???:0x00000000048ec2e0 [???]
+  1,914,799 ( 0.23%)  ???:0x00000000048ecb30 [???]
+  1,914,794 ( 0.23%)  ???:operator delete(void*) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+  1,856,578 ( 0.22%)  ???:0x000000000010a470 [???]
+  1,856,578 ( 0.22%)  ???:operator delete(void*, unsigned long) [/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30]
+  1,831,369 ( 0.22%)  /usr/include/c++/11/bits/basic_string.h:std::__detail::_Map_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  1,426,438 ( 0.17%)  ???:0x000000000010a460 [???]
+  1,399,280 ( 0.17%)  /usr/include/c++/11/bits/functional_hash.h:std::__detail::_Map_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  1,399,130 ( 0.17%)  /usr/include/c++/11/bits/functional_hash.h:encontrarCliqueMaximaRec(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, std::vector<int, std::allocator<int> >&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > > >&)'2
+  1,337,391 ( 0.16%)  /usr/include/c++/11/bits/stl_vector.h:std::vector<int, std::allocator<int> >::operator=(std::vector<int, std::allocator<int> > const&) [clone .isra.0]
+  1,153,695 ( 0.14%)  /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) [/home/aluno/SuperComp/projeto/forca-bruta-recursivo-memoizado]
+  1,119,424 ( 0.13%)  ???:0x000000000010a320 [???]
+  1,119,304 ( 0.13%)  /usr/include/c++/11/bits/unordered_map.h:encontrarCliqueMaximaRec(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, std::vector<int, std::allocator<int> >&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > > >&)'2
+  1,003,330 ( 0.12%)  ./elf/./elf/dl-lookup.c:_dl_lookup_symbol_x [/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2]
+    979,194 ( 0.12%)  /usr/include/c++/11/bits/char_traits.h:std::__detail::_Map_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+    935,211 ( 0.11%)  /usr/include/c++/11/bits/stl_iterator.h:void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&)
+    890,600 ( 0.11%)  ???:0x000000000010a3a0 [???]
+    841,044 ( 0.10%)  ???:0x000000000010a550 [???]
+    793,860 ( 0.09%)  /usr/include/c++/11/ext/new_allocator.h:std::vector<int, std::allocator<int> >::operator=(std::vector<int, std::allocator<int> > const&) [clone .isra.0]
+
+--------------------------------------------------------------------------------
+-- User-annotated source: forca-bruta-recursivo-memoizado.cpp
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 2 ----------------------------------------
+        .           #include <chrono>
+        .           #include <fstream>
+        .           #include <iostream>
+        .           #include <vector>
+        .           using namespace std;
+        .           using namespace chrono;
+        .           
+        .           // Função para ler o grafo a partir do arquivo de entrada
+       14 ( 0.00%)  vector<vector<int>> lerGrafo(const string &nomeArquivo, int &numVertices) {
+        .             ifstream arquivo(nomeArquivo);
+        .             int numArestas;
+        6 ( 0.00%)    arquivo >> numVertices >> numArestas;
+    6,487 ( 0.00%)  => ???:0x000000000010a3d0 (2x)
+        .           
+        2 ( 0.00%)    vector<vector<int>> grafo(numVertices, vector<int>(numVertices, 0));
+        .           
+      945 ( 0.00%)    for (int i = 0; i < numArestas; ++i) {
+        .               int u, v;
+    1,879 ( 0.00%)      arquivo >> u >> v;
+  262,134 ( 0.03%)  => ???:0x000000000010a3d0 (626x)
+    2,504 ( 0.00%)      grafo[u - 1][v - 1] = 1;
+    2,504 ( 0.00%)      grafo[v - 1][u - 1] = 1; // O grafo é não direcionado
+        .             }
+        .           
+        .             arquivo.close();
+        .           
+        .             return grafo;
+       12 ( 0.00%)  }
+        .           
+        .           // Função recursiva para encontrar a clique máxima
+        .           vector<int> encontrarCliqueMaximaRec(const vector<vector<int>> &grafo,
+        .                                                int verticeAtual, vector<int> &candidatos,
+4,757,552 ( 0.56%)                                       unordered_map<string, vector<int>> &memo) {
+        .           
+        .             // Generate a unique key for this combination of verticeAtual and candidatos
+        .             string key = to_string(verticeAtual);
+8,420,832 ( 1.00%)    for (int candidate : candidatos) {
+        .               key += "_" + to_string(candidate);
+        .             }
+        .           
+        .             // Check if the result is memoized
+        .             if (memo.find(key) != memo.end()) {
+        .               return memo[key];
+        .             }
+        .           
+        .             vector<int> cliqueMaximaCandidato;
+        .             cliqueMaximaCandidato.push_back(verticeAtual);
+        .           
+        .             vector<int> novosCandidatos;
+        .           
+        .             // Busca novos candidatos que são adjacentes a todos os membros
+        .             // da clique do candidato
+2,462,292 ( 0.29%)    for (auto u : candidatos) {
+        .               bool adjacenteATodos = true;
+        .           
+1,764,966 ( 0.21%)      for (auto c : cliqueMaximaCandidato) {
+2,313,720 ( 0.27%)        if (grafo[u][c] == 0) {
+        .                   adjacenteATodos = false;
+        .                   break;
+        .                 }
+        .               }
+        .           
+        .               if (adjacenteATodos) {
+        .                 novosCandidatos.push_back(u);
+        .               }
+        .             }
+        .           
+1,068,302 ( 0.13%)    for (auto novoCandidato : novosCandidatos) {
+        .               vector<int> cliqueNovoCandidato =
+1,958,782 ( 0.23%)          encontrarCliqueMaximaRec(grafo, novoCandidato, novosCandidatos, memo);
+808,650,228 (95.70%)  => forca-bruta-recursivo-memoizado.cpp:encontrarCliqueMaximaRec(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, std::vector<int, std::allocator<int> >&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > > >&)'2 (626x)
+        .           
+        .               bool podeAdicionar = true;
+        .           
+3,392,756 ( 0.40%)      for (auto u : cliqueNovoCandidato) {
+        .                 // Se não está ligado a alguém da clique máxima
+        .                 // não pode adicionar
+5,001,666 ( 0.59%)        if (grafo[u][verticeAtual] == 0) {
+        .                   podeAdicionar = false;
+        .                   break;
+        .                 }
+        .               }
+        .           
+  559,652 ( 0.07%)      if (podeAdicionar &&
+  279,826 ( 0.03%)          cliqueNovoCandidato.size() + 1 > cliqueMaximaCandidato.size()) {
+        .                 cliqueNovoCandidato.push_back(verticeAtual);
+  193,122 ( 0.02%)        cliqueMaximaCandidato = cliqueNovoCandidato;
+    8,720 ( 0.00%)  => /usr/include/c++/11/bits/vector.tcc:std::vector<int, std::allocator<int> >::operator=(std::vector<int, std::allocator<int> > const&) [clone .isra.0] (39x)
+        .               }
+        .             }
+        .           
+  114,412 ( 0.01%)    memo[key] = cliqueMaximaCandidato;
+    3,540 ( 0.00%)  => /usr/include/c++/11/bits/vector.tcc:std::vector<int, std::allocator<int> >::operator=(std::vector<int, std::allocator<int> > const&) [clone .isra.0] (30x)
+        .           
+        .             return cliqueMaximaCandidato;
+3,358,272 ( 0.40%)  }
+        .           
+        .           // Função principal para encontrar a clique máxima
+        .           vector<int> encontrarCliqueMaxima(const vector<vector<int>> &grafo,
+       13 ( 0.00%)                                    int numVertices) {
+        .             vector<int> cliqueAtual;
+        .             vector<int> melhorClique;
+        .             vector<int> candidatos;
+        .             unordered_map<string, vector<int>> memo; // Use a hash table for memoization
+        .             memo.clear();
+        .           
+      157 ( 0.00%)    for (int i = 0; i < numVertices; i++) {
+        .               candidatos.push_back(i);
+        .             }
+        .           
+      100 ( 0.00%)    for (auto candidato : candidatos) {
+      180 ( 0.00%)      cliqueAtual = encontrarCliqueMaximaRec(grafo, candidato, candidatos, memo);
+809,146,532 (95.75%)  => forca-bruta-recursivo-memoizado.cpp:encontrarCliqueMaximaRec(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, std::vector<int, std::allocator<int> >&, std::unordered_map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::vector<int, std::allocator<int> >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > > >&) (30x)
+       60 ( 0.00%)      if (cliqueAtual.size() > melhorClique.size()) {
+        3 ( 0.00%)        melhorClique = cliqueAtual;
+      262 ( 0.00%)  => /usr/include/c++/11/bits/vector.tcc:std::vector<int, std::allocator<int> >::operator=(std::vector<int, std::allocator<int> > const&) [clone .isra.0] (1x)
+        .               }
+        .             }
+        .           
+        .             return melhorClique;
+       12 ( 0.00%)  }
+        .           
+       10 ( 0.00%)  int main() {
+        .             int numVertices;
+        4 ( 0.00%)    vector<vector<int>> grafo = lerGrafo("grafo.txt", numVertices);
+  303,505 ( 0.04%)  => forca-bruta-recursivo-memoizado.cpp:lerGrafo(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int&) (1x)
+        .           
+        2 ( 0.00%)    auto start = high_resolution_clock::now();
+      881 ( 0.00%)  => ???:0x000000000010a310 (1x)
+        .           
+        4 ( 0.00%)    vector<int> cliqueMaxima = encontrarCliqueMaxima(grafo, numVertices);
+830,022,815 (98.22%)  => forca-bruta-recursivo-memoizado.cpp:encontrarCliqueMaxima(std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int) (1x)
+        .           
+        1 ( 0.00%)    auto stop = high_resolution_clock::now();
+       30 ( 0.00%)  => ???:0x000000000010a310 (1x)
+        .             auto duration = duration_cast<milliseconds>(stop - start);
+        .           
+        .             cout << "Execution time: " << duration.count() << " milliseconds" << endl;
+        .           
+        .             cout << "Clique máxima: ";
+       29 ( 0.00%)    for (auto vertice : cliqueMaxima) {
+       45 ( 0.00%)      cout << vertice + 1 << " ";
+    4,489 ( 0.00%)  => ???:0x000000000010a580 (9x)
+        .             }
+        .             cout << endl;
+        .             cout << "Tamanho clique máxima: " << cliqueMaxima.size() << endl;
+        .           
+        .             return 0;
+       16 ( 0.00%)  }
+    3,861 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::~vector() (1x)
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/stl_uninitialized.h
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 228 ----------------------------------------
+        .                 template<typename _ForwardIterator, typename _Size, typename _Tp>
+        .                   static _ForwardIterator
+        .                   __uninit_fill_n(_ForwardIterator __first, _Size __n,
+        .           			const _Tp& __x)
+        .                   {
+        .           	  _ForwardIterator __cur = __first;
+        .           	  __try
+        .           	    {
+       90 ( 0.00%)  	      for (; __n > 0; --__n, (void) ++__cur)
+        .           		std::_Construct(std::__addressof(*__cur), __x);
+        .           	      return __cur;
+        .           	    }
+        .           	  __catch(...)
+        .           	    {
+        .           	      std::_Destroy(__first, __cur);
+        .           	      __throw_exception_again;
+        .           	    }
+-- line 244 ----------------------------------------
+-- line 1001 ----------------------------------------
+        .               struct __is_bitwise_relocatable
+        .               : is_trivial<_Tp> { };
+        .           
+        .             template <typename _Tp, typename _Up>
+        .               inline __enable_if_t<std::__is_bitwise_relocatable<_Tp>::value, _Tp*>
+        .               __relocate_a_1(_Tp* __first, _Tp* __last,
+        .           		   _Tp* __result, allocator<_Up>&) noexcept
+        .               {
+  311,737 ( 0.04%)        ptrdiff_t __count = __last - __first;
+1,246,948 ( 0.15%)        if (__count > 0)
+  395,744 ( 0.05%)  	__builtin_memmove(__result, __first, __count * sizeof(_Tp));
+2,990,728 ( 0.35%)  => ???:0x000000000010a550 (197,872x)
+1,246,948 ( 0.15%)        return __result + __count;
+        .               }
+        .           
+        .             template <typename _InputIterator, typename _ForwardIterator,
+        .           	    typename _Allocator>
+        .               inline _ForwardIterator
+        .               __relocate_a_1(_InputIterator __first, _InputIterator __last,
+        .           		   _ForwardIterator __result, _Allocator& __alloc)
+        .               noexcept(noexcept(std::__relocate_object_a(std::addressof(*__result),
+-- line 1020 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/hashtable_policy.h
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 211 ----------------------------------------
+        .              *  template parameter of class template _Hashtable controls whether
+        .              *  nodes also store a hash code. In some cases (e.g. strings) this
+        .              *  may be a performance win.
+        .              */
+        .             struct _Hash_node_base
+        .             {
+        .               _Hash_node_base* _M_nxt;
+        .           
+   57,206 ( 0.01%)      _Hash_node_base() noexcept : _M_nxt() { }
+        .           
+        .               _Hash_node_base(_Hash_node_base* __next) noexcept : _M_nxt(__next) { }
+        .             };
+        .           
+        .             /**
+        .              *  struct _Hash_node_value_base
+        .              *
+        .              *  Node type with the value to store.
+-- line 227 ----------------------------------------
+-- line 274 ----------------------------------------
+        .              *  Primary template struct _Hash_node.
+        .              */
+        .             template<typename _Value, bool _Cache_hash_code>
+        .               struct _Hash_node
+        .               : _Hash_node_base
+        .               , _Hash_node_value<_Value, _Cache_hash_code>
+        .               {
+        .                 _Hash_node*
+   82,648 ( 0.01%)        _M_next() const noexcept
+  139,854 ( 0.02%)        { return static_cast<_Hash_node*>(this->_M_nxt); }
+        .               };
+        .           
+        .             /// Base class for node iterators.
+        .             template<typename _Value, bool _Cache_hash_code>
+        .               struct _Node_iterator_base
+        .               {
+        .                 using __node_type = _Hash_node<_Value, _Cache_hash_code>;
+        .           
+-- line 291 ----------------------------------------
+-- line 422 ----------------------------------------
+        .             {
+        .               typedef std::size_t first_argument_type;
+        .               typedef std::size_t second_argument_type;
+        .               typedef std::size_t result_type;
+        .           
+        .               result_type
+        .               operator()(first_argument_type __num,
+        .           	       second_argument_type __den) const noexcept
+2,213,015 ( 0.26%)      { return __num % __den; }
+        .             };
+        .           
+        .             /// Default ranged hash function H.  In principle it should be a
+        .             /// function object composed from objects of type H1 and H2 such that
+        .             /// h(k, N) = h2(h1(k), N), but that would mean making extra copies of
+        .             /// h1 and h2.  So instead we'll just use a tag to tell class template
+        .             /// hashtable to do that composition.
+        .             struct _Default_ranged_hash { };
+-- line 438 ----------------------------------------
+-- line 439 ----------------------------------------
+        .           
+        .             /// Default value for rehash policy.  Bucket size is (usually) the
+        .             /// smallest prime that keeps the load factor small enough.
+        .             struct _Prime_rehash_policy
+        .             {
+        .               using __has_load_factor = true_type;
+        .           
+        .               _Prime_rehash_policy(float __z = 1.0) noexcept
+        2 ( 0.00%)      : _M_max_load_factor(__z), _M_next_resize(0) { }
+        .           
+        .               float
+        .               max_load_factor() const noexcept
+        .               { return _M_max_load_factor; }
+        .           
+        .               // Return a bucket size no smaller than n.
+        .               std::size_t
+        .               _M_next_bkt(std::size_t __n) const;
+-- line 455 ----------------------------------------
+-- line 688 ----------------------------------------
+        .                 const mapped_type&
+        .                 at(const key_type& __k) const;
+        .               };
+        .           
+        .             template<typename _Key, typename _Pair, typename _Alloc, typename _Equal,
+        .           	   typename _Hash, typename _RangeHash, typename _Unused,
+        .           	   typename _RehashPolicy, typename _Traits>
+        .               auto
+3,638,128 ( 0.43%)      _Map_base<_Key, _Pair, _Alloc, _Select1st, _Equal,
+        .           	      _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits, true>::
+        .               operator[](const key_type& __k)
+        .               -> mapped_type&
+        .               {
+        .                 __hashtable* __h = static_cast<__hashtable*>(this);
+        .                 __hash_code __code = __h->_M_hash_code(__k);
+        .                 std::size_t __bkt = __h->_M_bucket_index(__code);
+        .                 if (auto __node = __h->_M_find_node(__bkt, __k, __code))
+  222,650 ( 0.03%)  	return __node->_M_v().second;
+        .           
+        .                 typename __hashtable::_Scoped_node __node {
+        .           	__h,
+        .           	std::piecewise_construct,
+        .           	std::tuple<const key_type&>(__k),
+        .           	std::tuple<>()
+        .                 };
+        .                 auto __pos
+        .           	= __h->_M_insert_unique_node(__bkt, __code, __node._M_node);
+        .                 __node._M_node = nullptr;
+        .                 return __pos->second;
+3,358,272 ( 0.40%)      }
+        .           
+        .             template<typename _Key, typename _Pair, typename _Alloc, typename _Equal,
+        .           	   typename _Hash, typename _RangeHash, typename _Unused,
+        .           	   typename _RehashPolicy, typename _Traits>
+        .               auto
+        .               _Map_base<_Key, _Pair, _Alloc, _Select1st, _Equal,
+        .           	      _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits, true>::
+        .               operator[](key_type&& __k)
+-- line 725 ----------------------------------------
+-- line 1243 ----------------------------------------
+        .           			    __bkt_count);
+        .                 }
+        .           
+        .                 std::size_t
+        .                 _M_bucket_index(const _Hash_node_value<_Value, true>& __n,
+        .           		      std::size_t __bkt_count) const
+        .           	noexcept( noexcept(declval<const _RangeHash&>()((__hash_code)0,
+        .           							(std::size_t)0)) )
+  159,929 ( 0.02%)        { return _RangeHash{}(__n._M_hash_code, __bkt_count); }
+        .           
+        .                 void
+        .                 _M_store_code(_Hash_node_code_cache<false>&, __hash_code) const
+        .                 { }
+        .           
+        .                 void
+        .                 _M_copy_code(_Hash_node_code_cache<false>&,
+        .           		   const _Hash_node_code_cache<false>&) const
+        .                 { }
+        .           
+        .                 void
+        .                 _M_store_code(_Hash_node_code_cache<true>& __n, __hash_code __c) const
+   57,206 ( 0.01%)        { __n._M_hash_code = __c; }
+        .           
+        .                 void
+        .                 _M_copy_code(_Hash_node_code_cache<true>& __to,
+        .           		   const _Hash_node_code_cache<true>& __from) const
+        .                 { __to._M_hash_code = __from._M_hash_code; }
+        .           
+        .                 void
+        .                 _M_swap(_Hash_code_base& __x)
+-- line 1272 ----------------------------------------
+-- line 1588 ----------------------------------------
+        .           
+        .                 static bool
+        .                 _S_node_equals(const _Hash_node_code_cache<false>&,
+        .           		     const _Hash_node_code_cache<false>&)
+        .                 { return true; }
+        .           
+        .                 static bool
+        .                 _S_equals(__hash_code __c, const _Hash_node_code_cache<true>& __n)
+1,004,796 ( 0.12%)        { return __c == __n._M_hash_code; }
+        .           
+        .                 static bool
+        .                 _S_node_equals(const _Hash_node_code_cache<true>& __lhn,
+        .           		     const _Hash_node_code_cache<true>& __rhn)
+        .                 { return __lhn._M_hash_code == __rhn._M_hash_code; }
+        .           
+        .               protected:
+        .                 _Hashtable_base() = default;
+-- line 1604 ----------------------------------------
+-- line 1609 ----------------------------------------
+        .           
+        .                 bool
+        .                 _M_equals(const _Key& __k, __hash_code __c,
+        .           		const _Hash_node_value<_Value, __hash_cached::value>& __n) const
+        .                 {
+        .           	static_assert(__is_invocable<const _Equal&, const _Key&, const _Key&>{},
+        .           	  "key equality predicate must be invocable with two arguments of "
+        .           	  "key type");
+1,210,486 ( 0.14%)  	return _S_equals(__c, __n) && _M_eq()(__k, _ExtractKey{}(__n._M_v()));
+        .                 }
+        .           
+        .                 template<typename _Kt>
+        .           	bool
+        .           	_M_equals_tr(const _Kt& __k, __hash_code __c,
+        .           		     const _Hash_node_value<_Value,
+        .           					    __hash_cached::value>& __n) const
+        .           	{
+-- line 1625 ----------------------------------------
+-- line 1904 ----------------------------------------
+        .                 __n->~__node_type();
+        .                 __node_alloc_traits::deallocate(_M_node_allocator(), __ptr, 1);
+        .               }
+        .           
+        .             template<typename _NodeAlloc>
+        .               void
+        .               _Hashtable_alloc<_NodeAlloc>::_M_deallocate_nodes(__node_ptr __n)
+        .               {
+  114,415 ( 0.01%)        while (__n)
+        .           	{
+        .           	  __node_ptr __tmp = __n;
+        .           	  __n = __n->_M_next();
+        .           	  _M_deallocate_node(__tmp);
+        .           	}
+        .               }
+        .           
+        .             template<typename _NodeAlloc>
+-- line 1920 ----------------------------------------
+-- line 1921 ----------------------------------------
+        .               auto
+        .               _Hashtable_alloc<_NodeAlloc>::_M_allocate_buckets(std::size_t __bkt_count)
+        .               -> __buckets_ptr
+        .               {
+        .                 __buckets_alloc_type __alloc(_M_node_allocator());
+        .           
+        .                 auto __ptr = __buckets_alloc_traits::allocate(__alloc, __bkt_count);
+        .                 __buckets_ptr __p = std::__to_address(__ptr);
+       52 ( 0.00%)        __builtin_memset(__p, 0, __bkt_count * sizeof(__node_base_ptr));
+1,341,544 ( 0.16%)  => ???:0x000000000010a3c0 (13x)
+        .                 return __p;
+        .               }
+        .           
+        .             template<typename _NodeAlloc>
+        .               void
+        .               _Hashtable_alloc<_NodeAlloc>::
+        .               _M_deallocate_buckets(__buckets_ptr __bkts,
+        .           			  std::size_t __bkt_count)
+-- line 1937 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/functional_hash.h
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 190 ----------------------------------------
+        .           
+        .           #undef _Cxx_hashtable_define_trivial_hash
+        .           
+        .             struct _Hash_impl
+        .             {
+        .               static size_t
+        .               hash(const void* __ptr, size_t __clength,
+        .           	 size_t __seed = static_cast<size_t>(0xc70f6907UL))
+2,798,560 ( 0.33%)      { return _Hash_bytes(__ptr, __clength, __seed); }
+    4,890 ( 0.00%)  => ???:0x000000000010a320 (30x)
+        .           
+        .               template<typename _Tp>
+        .                 static size_t
+        .                 hash(const _Tp& __val)
+        .                 { return hash(&__val, sizeof(__val)); }
+        .           
+        .               template<typename _Tp>
+        .                 static size_t
+-- line 206 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/stl_iterator.h
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 1020 ----------------------------------------
+        .                 using iterator_concept = std::__detail::__iter_concept<_Iterator>;
+        .           #endif
+        .           
+        .                 _GLIBCXX_CONSTEXPR __normal_iterator() _GLIBCXX_NOEXCEPT
+        .                 : _M_current(_Iterator()) { }
+        .           
+        .                 explicit _GLIBCXX20_CONSTEXPR
+        .                 __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
+4,114,258 ( 0.49%)        : _M_current(__i) { }
+        .           
+        .                 // Allow iterator to const_iterator conversion
+        .                 template<typename _Iter>
+        .                   _GLIBCXX20_CONSTEXPR
+        .                   __normal_iterator(const __normal_iterator<_Iter,
+        .           			  typename __enable_if<
+        .                 	       (std::__are_same<_Iter, typename _Container::pointer>::__value),
+        .           		      _Container>::__type>& __i) _GLIBCXX_NOEXCEPT
+-- line 1036 ----------------------------------------
+-- line 1263 ----------------------------------------
+        .               { return __lhs.base() - __rhs.base(); }
+        .           
+        .             template<typename _Iterator, typename _Container>
+        .               _GLIBCXX20_CONSTEXPR
+        .               inline typename __normal_iterator<_Iterator, _Container>::difference_type
+        .               operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+        .           	      const __normal_iterator<_Iterator, _Container>& __rhs)
+        .               _GLIBCXX_NOEXCEPT
+  935,211 ( 0.11%)      { return __lhs.base() - __rhs.base(); }
+        .           
+        .             template<typename _Iterator, typename _Container>
+        .               _GLIBCXX20_CONSTEXPR
+        .               inline __normal_iterator<_Iterator, _Container>
+        .               operator+(typename __normal_iterator<_Iterator, _Container>::difference_type
+        .           	      __n, const __normal_iterator<_Iterator, _Container>& __i)
+        .               _GLIBCXX_NOEXCEPT
+        .               { return __normal_iterator<_Iterator, _Container>(__i.base() + __n); }
+-- line 1279 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/basic_string.h
+--------------------------------------------------------------------------------
+Ir                  
+
+-- line 157 ----------------------------------------
+         .                 // Use empty-base optimization: http://www.cantrip.org/emptyopt.html
+         .                 struct _Alloc_hider : allocator_type // TODO check __is_final
+         .                 {
+         .           #if __cplusplus < 201103L
+         .           	_Alloc_hider(pointer __dat, const _Alloc& __a = _Alloc())
+         .           	: allocator_type(__a), _M_p(__dat) { }
+         .           #else
+         .           	_Alloc_hider(pointer __dat, const _Alloc& __a)
+ 5,049,987 ( 0.60%)  	: allocator_type(__a), _M_p(__dat) { }
+         .           
+         .           	_Alloc_hider(pointer __dat, _Alloc&& __a = _Alloc())
+ 4,267,622 ( 0.51%)  	: allocator_type(std::move(__a)), _M_p(__dat) { }
+         .           #endif
+         .           
+         .           	pointer _M_p; // The actual data.
+         .                 };
+         .           
+         .                 _Alloc_hider	_M_dataplus;
+         .                 size_type		_M_string_length;
+         .           
+-- line 176 ----------------------------------------
+-- line 179 ----------------------------------------
+         .                 union
+         .                 {
+         .           	_CharT           _M_local_buf[_S_local_capacity + 1];
+         .           	size_type        _M_allocated_capacity;
+         .                 };
+         .           
+         .                 void
+         .                 _M_data(pointer __p)
+ 1,869,951 ( 0.22%)        { _M_dataplus._M_p = __p; }
+         .           
+         .                 void
+         .                 _M_length(size_type __length)
+ 3,707,911 ( 0.44%)        { _M_string_length = __length; }
+         .           
+         .                 pointer
+         .                 _M_data() const
+ 5,952,745 ( 0.70%)        { return _M_dataplus._M_p; }
+         .           
+         .                 pointer
+         .                 _M_local_data()
+         .                 {
+         .           #if __cplusplus >= 201103L
+   114,412 ( 0.01%)  	return std::pointer_traits<pointer>::pointer_to(*_M_local_buf);
+         .           #else
+         .           	return pointer(_M_local_buf);
+         .           #endif
+         .                 }
+         .           
+         .                 const_pointer
+         .                 _M_local_data() const
+         .                 {
+         .           #if __cplusplus >= 201103L
+ 1,882,558 ( 0.22%)  	return std::pointer_traits<const_pointer>::pointer_to(*_M_local_buf);
+         .           #else
+         .           	return const_pointer(_M_local_buf);
+         .           #endif
+         .                 }
+         .           
+         .                 void
+         .                 _M_capacity(size_type __capacity)
+         .                 { _M_allocated_capacity = __capacity; }
+-- line 219 ----------------------------------------
+-- line 231 ----------------------------------------
+         .           
+         .                 // Create & Destroy
+         .                 pointer
+         .                 _M_create(size_type&, size_type);
+         .           
+         .                 void
+         .                 _M_dispose()
+         .                 {
+ 7,975,534 ( 0.94%)  	if (!_M_is_local())
+         .           	  _M_destroy(_M_allocated_capacity);
+         .                 }
+         .           
+         .                 void
+         .                 _M_destroy(size_type __size) throw()
+   430,140 ( 0.05%)        { _Alloc_traits::deallocate(_M_get_allocator(), _M_data(), __size + 1); }
+         .           
+         .                 // _M_construct_aux is used to implement the 21.3.1 para 15 which
+         .                 // requires special behaviour if _InIterator is an integral type
+         .                 template<typename _InIterator>
+         .                   void
+         .                   _M_construct_aux(_InIterator __beg, _InIterator __end,
+         .           			 std::__false_type)
+         .           	{
+-- line 253 ----------------------------------------
+-- line 348 ----------------------------------------
+         .           		|| less<const _CharT*>()(_M_data() + this->size(), __s));
+         .                 }
+         .           
+         .                 // When __n = 1 way faster than the general multichar
+         .                 // traits_type::copy/move/assign.
+         .                 static void
+         .                 _S_copy(_CharT* __d, const _CharT* __s, size_type __n)
+         .                 {
+    25,214 ( 0.00%)  	if (__n == 1)
+         .           	  traits_type::assign(*__d, *__s);
+         .           	else
+         .           	  traits_type::copy(__d, __s, __n);
+         .                 }
+         .           
+         .                 static void
+         .                 _S_move(_CharT* __d, const _CharT* __s, size_type __n)
+         .                 {
+-- line 364 ----------------------------------------
+-- line 547 ----------------------------------------
+         .                  */
+         .           #if __cpp_deduction_guides && ! defined _GLIBCXX_DEFINING_STRING_INSTANTIATIONS
+         .                 // _GLIBCXX_RESOLVE_LIB_DEFECTS
+         .                 // 3076. basic_string CTAD ambiguity
+         .                 template<typename = _RequireAllocator<_Alloc>>
+         .           #endif
+         .                 basic_string(size_type __n, _CharT __c, const _Alloc& __a = _Alloc())
+         .                 : _M_dataplus(_M_local_data(), __a)
+ 6,222,456 ( 0.74%)        { _M_construct(__n, __c); }
+    39,291 ( 0.00%)  => ???:0x000000000010a4c0 (930x)
+         .           
+         .           #if __cplusplus >= 201103L
+         .                 /**
+         .                  *  @brief  Move construct string.
+         .                  *  @param  __str  Source string.
+         .                  *
+         .                  *  The newly-created string contains the exact contents of @a __str.
+         .                  *  @a __str is a valid, but unspecified string.
+         .                  */
+         .                 basic_string(basic_string&& __str) noexcept
+         .                 : _M_dataplus(_M_local_data(), std::move(__str._M_get_allocator()))
+         .                 {
+ 3,650,704 ( 0.43%)  	if (__str._M_is_local())
+         .           	  {
+         .           	    traits_type::copy(_M_local_buf, __str._M_local_buf,
+         .           			      _S_local_capacity + 1);
+         .           	  }
+         .           	else
+         .           	  {
+         .           	    _M_data(__str._M_data());
+         .           	    _M_capacity(__str._M_allocated_capacity);
+-- line 576 ----------------------------------------
+-- line 919 ----------------------------------------
+         .                 size_type
+         .                 size() const _GLIBCXX_NOEXCEPT
+         .                 { return _M_string_length; }
+         .           
+         .                 ///  Returns the number of characters in the string, not including any
+         .                 ///  null-termination.
+         .                 size_type
+         .                 length() const _GLIBCXX_NOEXCEPT
+ 1,882,558 ( 0.22%)        { return _M_string_length; }
+         .           
+         .                 ///  Returns the size() of the largest possible %string.
+         .                 size_type
+         .                 max_size() const _GLIBCXX_NOEXCEPT
+         .                 { return (_Alloc_traits::max_size(_M_get_allocator()) - 1) / 2; }
+         .           
+         .                 /**
+         .                  *  @brief  Resizes the %string to the specified number of characters.
+-- line 935 ----------------------------------------
+-- line 1054 ----------------------------------------
+         .                 reference
+         .                 operator[](size_type __pos)
+         .                 {
+         .                   // Allow pos == size() both in C++98 mode, as v3 extension,
+         .           	// and in C++11 mode.
+         .           	__glibcxx_assert(__pos <= size());
+         .                   // In pedantic mode be strict in C++98 mode.
+         .           	_GLIBCXX_DEBUG_PEDASSERT(__cplusplus >= 201103L || __pos < size());
+ 2,105,208 ( 0.25%)  	return _M_data()[__pos];
+         .                 }
+         .           
+         .                 /**
+         .                  *  @brief  Provides access to the data contained in the %string.
+         .                  *  @param __n The index of the character to access.
+         .                  *  @return  Read-only (const) reference to the character.
+         .                  *  @throw  std::out_of_range  If @a n is an invalid index.
+         .                  *
+-- line 1070 ----------------------------------------
+-- line 1206 ----------------------------------------
+         .           
+         .                 /**
+         .                  *  @brief  Append a string to this string.
+         .                  *  @param __str  The string to append.
+         .                  *  @return  Reference to this string.
+         .                  */
+         .                 basic_string&
+         .                 append(const basic_string& __str)
+ 7,301,408 ( 0.86%)        { return _M_append(__str._M_data(), __str.size()); }
+    73,083 ( 0.01%)  => ???:0x000000000010a360 (900x)
+         .           
+         .                 /**
+         .                  *  @brief  Append a substring.
+         .                  *  @param __str  The string to append.
+         .                  *  @param __pos  Index of the first character of str to append.
+         .                  *  @param __n  The number of characters to append.
+         .                  *  @return  Reference to this string.
+         .                  *  @throw  std::out_of_range if @a __pos is not a valid index.
+-- line 1222 ----------------------------------------
+-- line 1952 ----------------------------------------
+         .                  *  thrown.  The value of the string doesn't change if an error
+         .                  *  is thrown.
+         .                 */
+         .                 basic_string&
+         .                 replace(size_type __pos, size_type __n1, const _CharT* __s,
+         .           	      size_type __n2)
+         .                 {
+         .           	__glibcxx_requires_string_len(__s, __n2);
+10,952,112 ( 1.30%)  	return _M_replace(_M_check(__pos, "basic_string::replace"),
+    74,272 ( 0.01%)  => ???:0x000000000010a530 (900x)
+         .           			  _M_limit(__pos, __n1), __s, __n2);
+         .                 }
+         .           
+         .                 /**
+         .                  *  @brief  Replace characters with value of a C string.
+         .                  *  @param __pos  Index of first character to replace.
+         .                  *  @param __n1  Number of characters to be replaced.
+         .                  *  @param __s  C string to insert.
+-- line 1968 ----------------------------------------
+-- line 6229 ----------------------------------------
+         .               { return __lhs.compare(__rhs) == 0; }
+         .           
+         .             template<typename _CharT>
+         .               inline
+         .               typename __gnu_cxx::__enable_if<__is_char<_CharT>::__value, bool>::__type
+         .               operator==(const basic_string<_CharT>& __lhs,
+         .           	       const basic_string<_CharT>& __rhs) _GLIBCXX_NOEXCEPT
+         .               { return (__lhs.size() == __rhs.size()
+ 2,226,500 ( 0.26%)  	      && !std::char_traits<_CharT>::compare(__lhs.data(), __rhs.data(),
+         .           						    __lhs.size())); }
+         .           
+         .             /**
+         .              *  @brief  Test equivalence of string and C string.
+         .              *  @param __lhs  String.
+         .              *  @param __rhs  C string.
+         .              *  @return  True if @a __lhs.compare(@a __rhs) == 0.  False otherwise.
+         .              */
+-- line 6245 ----------------------------------------
+-- line 6654 ----------------------------------------
+         .             { return __gnu_cxx::__stoa(&std::strtold, "stold", __str.c_str(), __idx); }
+         .           #endif // _GLIBCXX_USE_C99_STDLIB
+         .           
+         .             // DR 1261. Insufficent overloads for to_string / to_wstring
+         .           
+         .             inline string
+         .             to_string(int __val)
+         .             {
+ 4,210,416 ( 0.50%)      const bool __neg = __val < 0;
+ 6,315,624 ( 0.75%)      const unsigned __uval = __neg ? (unsigned)~__val + 1u : __val;
+         .               const auto __len = __detail::__to_chars_len(__uval);
+ 2,105,208 ( 0.25%)      string __str(__neg + __len, '-');
+ 2,105,208 ( 0.25%)      __detail::__to_chars_10_impl(&__str[__neg], __len, __uval);
+         .               return __str;
+         .             }
+         .           
+         .             inline string
+         .             to_string(unsigned __val)
+         .             {
+         .               string __str(__detail::__to_chars_len(__val), '\0');
+         .               __detail::__to_chars_10_impl(&__str[0], __str.size(), __val);
+-- line 6674 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/stl_vector.h
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 90 ----------------------------------------
+        .           
+        .                 struct _Vector_impl_data
+        .                 {
+        .           	pointer _M_start;
+        .           	pointer _M_finish;
+        .           	pointer _M_end_of_storage;
+        .           
+        .           	_Vector_impl_data() _GLIBCXX_NOEXCEPT
+1,405,554 ( 0.17%)  	: _M_start(), _M_finish(), _M_end_of_storage()
+        .           	{ }
+        .           
+        .           #if __cplusplus >= 201103L
+        .           	_Vector_impl_data(_Vector_impl_data&& __x) noexcept
+  171,618 ( 0.02%)  	: _M_start(__x._M_start), _M_finish(__x._M_finish),
+  114,412 ( 0.01%)  	  _M_end_of_storage(__x._M_end_of_storage)
+        .           	{ __x._M_start = __x._M_finish = __x._M_end_of_storage = pointer(); }
+        .           #endif
+        .           
+        .           	void
+       30 ( 0.00%)  	_M_copy_data(_Vector_impl_data const& __x) _GLIBCXX_NOEXCEPT
+        .           	{
+      120 ( 0.00%)  	  _M_start = __x._M_start;
+        .           	  _M_finish = __x._M_finish;
+      150 ( 0.00%)  	  _M_end_of_storage = __x._M_end_of_storage;
+        .           	}
+        .           
+        .           	void
+        .           	_M_swap_data(_Vector_impl_data& __x) _GLIBCXX_NOEXCEPT
+        .           	{
+        .           	  // Do not use std::swap(_M_start, __x._M_start), etc as it loses
+        .           	  // information used by TBAA.
+        .           	  _Vector_impl_data __tmp;
+-- line 121 ----------------------------------------
+-- line 328 ----------------------------------------
+        .                 _Vector_base(const allocator_type& __a, _Vector_base&& __x)
+        .                 : _M_impl(_Tp_alloc_type(__a), std::move(__x._M_impl))
+        .                 { }
+        .           #endif
+        .           
+        .                 ~_Vector_base() _GLIBCXX_NOEXCEPT
+        .                 {
+        .           	_M_deallocate(_M_impl._M_start,
+  787,569 ( 0.09%)  		      _M_impl._M_end_of_storage - _M_impl._M_start);
+        .                 }
+        .           
+        .               public:
+        .                 _Vector_impl _M_impl;
+        .           
+        .                 pointer
+        .                 _M_allocate(size_t __n)
+        .                 {
+        .           	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
+1,089,290 ( 0.13%)  	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
+        .                 }
+        .           
+        .                 void
+        1 ( 0.00%)        _M_deallocate(pointer __p, size_t __n)
+        .                 {
+        .           	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
+1,259,583 ( 0.15%)  	if (__p)
+        .           	  _Tr::deallocate(_M_impl, __p, __n);
+        .                 }
+        .           
+        .               protected:
+        .                 void
+        .                 _M_create_storage(size_t __n)
+        .                 {
+  890,699 ( 0.11%)  	this->_M_impl._M_start = this->_M_allocate(__n);
+        .           	this->_M_impl._M_finish = this->_M_impl._M_start;
+  445,365 ( 0.05%)  	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+        .                 }
+        .               };
+        .           
+        .             /**
+        .              *  @brief A standard container which offers fixed time access to
+        .              *  individual elements in any order.
+        .              *
+        .              *  @ingroup sequences
+-- line 371 ----------------------------------------
+-- line 549 ----------------------------------------
+        .                  *
+        .                  *  The newly-created %vector uses a copy of the allocator object used
+        .                  *  by @a __x (unless the allocator traits dictate a different object).
+        .                  */
+        .                 vector(const vector& __x)
+        .                 : _Base(__x.size(),
+        .           	_Alloc_traits::_S_select_on_copy(__x._M_get_Tp_allocator()))
+        .                 {
+       60 ( 0.00%)  	this->_M_impl._M_finish =
+        .           	  std::__uninitialized_copy_a(__x.begin(), __x.end(),
+        .           				      this->_M_impl._M_start,
+        .           				      _M_get_Tp_allocator());
+  222,650 ( 0.03%)        }
+        .           
+        .           #if __cplusplus >= 201103L
+        .                 /**
+        .                  *  @brief  %Vector move constructor.
+        .                  *
+        .                  *  The newly-created %vector contains the exact contents of the
+        .                  *  moved instance.
+        .                  *  The contents of the moved instance are a valid, but unspecified
+-- line 569 ----------------------------------------
+-- line 670 ----------------------------------------
+        .           #endif
+        .           
+        .                 /**
+        .                  *  The dtor only erases the elements, and note that if the
+        .                  *  elements themselves are pointers, the pointed-to memory is
+        .                  *  not touched in any way.  Managing the pointer is the user's
+        .                  *  responsibility.
+        .                  */
+        5 ( 0.00%)        ~vector() _GLIBCXX_NOEXCEPT
+        .                 {
+  178,850 ( 0.02%)  	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+        .           		      _M_get_Tp_allocator());
+        .           	_GLIBCXX_ASAN_ANNOTATE_BEFORE_DEALLOC;
+        3 ( 0.00%)        }
+        .           
+        .                 /**
+        .                  *  @brief  %Vector assignment operator.
+        .                  *  @param  __x  A %vector of identical element and allocator types.
+        .                  *
+        .                  *  All the elements of @a __x are copied, but any unused capacity in
+        .                  *  @a __x will not be copied.
+        .                  *
+-- line 691 ----------------------------------------
+-- line 911 ----------------------------------------
+        .                 crend() const noexcept
+        .                 { return const_reverse_iterator(begin()); }
+        .           #endif
+        .           
+        .                 // [23.2.4.2] capacity
+        .                 /**  Returns the number of elements in the %vector.  */
+        .                 size_type
+        .                 size() const _GLIBCXX_NOEXCEPT
+3,545,974 ( 0.42%)        { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
+        .           
+        .                 /**  Returns the size() of the largest possible %vector.  */
+        .                 size_type
+        .                 max_size() const _GLIBCXX_NOEXCEPT
+        .                 { return _S_max_size(_M_get_Tp_allocator()); }
+        .           
+        .           #if __cplusplus >= 201103L
+        .                 /**
+-- line 927 ----------------------------------------
+-- line 992 ----------------------------------------
+        .           
+        .                 /**
+        .                  *  Returns the total number of elements that the %vector can
+        .                  *  hold before needing to allocate more memory.
+        .                  */
+        .                 size_type
+        .                 capacity() const _GLIBCXX_NOEXCEPT
+        .                 { return size_type(this->_M_impl._M_end_of_storage
+  364,743 ( 0.04%)  			 - this->_M_impl._M_start); }
+        .           
+        .                 /**
+        .                  *  Returns true if the %vector is empty.  (Thus begin() would
+        .                  *  equal end().)
+        .                  */
+        .                 _GLIBCXX_NODISCARD bool
+        .                 empty() const _GLIBCXX_NOEXCEPT
+        .                 { return begin() == end(); }
+-- line 1008 ----------------------------------------
+-- line 1038 ----------------------------------------
+        .                  *  Note that data access with this operator is unchecked and
+        .                  *  out_of_range lookups are not defined. (For checked lookups
+        .                  *  see at().)
+        .                  */
+        .                 reference
+        .                 operator[](size_type __n) _GLIBCXX_NOEXCEPT
+        .                 {
+        .           	__glibcxx_requires_subscript(__n);
+      939 ( 0.00%)  	return *(this->_M_impl._M_start + __n);
+        .                 }
+        .           
+        .                 /**
+        .                  *  @brief  Subscript access to the data contained in the %vector.
+        .                  *  @param __n The index of the element for which data should be
+        .                  *  accessed.
+        .                  *  @return  Read-only (constant) reference to data.
+        .                  *
+-- line 1054 ----------------------------------------
+-- line 1056 ----------------------------------------
+        .                  *  Note that data access with this operator is unchecked and
+        .                  *  out_of_range lookups are not defined. (For checked lookups
+        .                  *  see at().)
+        .                  */
+        .                 const_reference
+        .                 operator[](size_type __n) const _GLIBCXX_NOEXCEPT
+        .                 {
+        .           	__glibcxx_requires_subscript(__n);
+5,302,880 ( 0.63%)  	return *(this->_M_impl._M_start + __n);
+        .                 }
+        .           
+        .               protected:
+        .                 /// Safety check used only from at().
+        .                 void
+        .                 _M_range_check(size_type __n) const
+        .                 {
+        .           	if (__n >= this->size())
+-- line 1072 ----------------------------------------
+-- line 1181 ----------------------------------------
+        .                  *  element at the end of the %vector and assigns the given data
+        .                  *  to it.  Due to the nature of a %vector this operation can be
+        .                  *  done in constant time if the %vector has preallocated space
+        .                  *  available.
+        .                  */
+        .                 void
+        .                 push_back(const value_type& __x)
+        .                 {
+  968,315 ( 0.11%)  	if (this->_M_impl._M_finish != this->_M_impl._M_end_of_storage)
+        .           	  {
+        .           	    _GLIBCXX_ASAN_ANNOTATE_GROW(1);
+        .           	    _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
+        .           				     __x);
+  179,398 ( 0.02%)  	    ++this->_M_impl._M_finish;
+        .           	    _GLIBCXX_ASAN_ANNOTATE_GREW(1);
+        .           	  }
+        .           	else
+1,780,355 ( 0.21%)  	  _M_realloc_insert(end(), __x);
+   59,982 ( 0.01%)  => /usr/include/c++/11/bits/vector.tcc:void std::vector<int, std::allocator<int> >::_M_realloc_insert<int const&>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int const&) (247x)
+        .                 }
+        .           
+        .           #if __cplusplus >= 201103L
+        .                 void
+        .                 push_back(value_type&& __x)
+        .                 { emplace_back(std::move(__x)); }
+        .           
+        .                 template<typename... _Args>
+-- line 1206 ----------------------------------------
+-- line 1587 ----------------------------------------
+        .           					_M_get_Tp_allocator());
+        .           	}
+        .           
+        .                 // Called by the first initialize_dispatch above and by the
+        .                 // vector(n,value,a) constructor.
+        .                 void
+        .                 _M_fill_initialize(size_type __n, const value_type& __value)
+        .                 {
+        2 ( 0.00%)  	this->_M_impl._M_finish =
+        .           	  std::__uninitialized_fill_n_a(this->_M_impl._M_start, __n, __value,
+        .           					_M_get_Tp_allocator());
+        .                 }
+        .           
+        .           #if __cplusplus >= 201103L
+        .                 // Called by the vector(n) constructor.
+        .                 void
+        .                 _M_default_initialize(size_type __n)
+-- line 1603 ----------------------------------------
+-- line 1750 ----------------------------------------
+        .                 _M_emplace_aux(const_iterator __position, value_type&& __v)
+        .                 { return _M_insert_rval(__position, std::move(__v)); }
+        .           #endif
+        .           
+        .                 // Called by _M_fill_insert, _M_insert_aux etc.
+        .                 size_type
+        .                 _M_check_len(size_type __n, const char* __s) const
+        .                 {
+3,117,370 ( 0.37%)  	if (max_size() - size() < __n)
+        .           	  __throw_length_error(__N(__s));
+        .           
+        .           	const size_type __len = size() + (std::max)(size(), __n);
+  623,474 ( 0.07%)  	return (__len < size() || __len > max_size()) ? max_size() : __len;
+        .                 }
+        .           
+        .                 // Called by constructors to check initial size.
+        .                 static size_type
+        .                 _S_check_init_len(size_type __n, const allocator_type& __a)
+        .                 {
+        6 ( 0.00%)  	if (__n > _S_max_size(_Tp_alloc_type(__a)))
+        .           	  __throw_length_error(
+        .           	      __N("cannot create std::vector larger than max_size()"));
+        .           	return __n;
+        .                 }
+        .           
+        .                 static size_type
+        .                 _S_max_size(const _Tp_alloc_type& __a) _GLIBCXX_NOEXCEPT
+        .                 {
+-- line 1777 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/ext/new_allocator.h
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 81 ----------------------------------------
+        .                 _GLIBCXX20_CONSTEXPR
+        .                 new_allocator(const new_allocator&) _GLIBCXX_USE_NOEXCEPT { }
+        .           
+        .                 template<typename _Tp1>
+        .           	_GLIBCXX20_CONSTEXPR
+        .           	new_allocator(const new_allocator<_Tp1>&) _GLIBCXX_USE_NOEXCEPT { }
+        .           
+        .           #if __cplusplus <= 201703L
+   56,658 ( 0.01%)        ~new_allocator() _GLIBCXX_USE_NOEXCEPT { }
+        .           
+        .                 pointer
+        .                 address(reference __x) const _GLIBCXX_NOEXCEPT
+        .                 { return std::__addressof(__x); }
+        .           
+        .                 const_pointer
+        .                 address(const_reference __x) const _GLIBCXX_NOEXCEPT
+        .                 { return std::__addressof(__x); }
+-- line 97 ----------------------------------------
+-- line 103 ----------------------------------------
+        .                 allocate(size_type __n, const void* = static_cast<const void*>(0))
+        .                 {
+        .           #if __cplusplus >= 201103L
+        .           	 // _GLIBCXX_RESOLVE_LIB_DEFECTS
+        .           	 // 3308. std::allocator<void>().allocate(n)
+        .           	 static_assert(sizeof(_Tp) != 0, "cannot allocate incomplete types");
+        .           #endif
+        .           
+1,032,745 ( 0.12%)  	if (__builtin_expect(__n > this->_M_max_size(), false))
+        .           	  {
+        .           	    // _GLIBCXX_RESOLVE_LIB_DEFECTS
+        .           	    // 3190. allocator::allocate sometimes returns too little storage
+        .           	    if (__n > (std::size_t(-1) / sizeof(_Tp)))
+        .           	      std::__throw_bad_array_new_length();
+        .           	    std::__throw_bad_alloc();
+        .           	  }
+        .           
+        .           #if __cpp_aligned_new
+        .           	if (alignof(_Tp) > __STDCPP_DEFAULT_NEW_ALIGNMENT__)
+        .           	  {
+        .           	    std::align_val_t __al = std::align_val_t(alignof(_Tp));
+        .           	    return static_cast<_Tp*>(::operator new(__n * sizeof(_Tp), __al));
+        .           	  }
+        .           #endif
+4,321,834 ( 0.51%)  	return static_cast<_Tp*>(::operator new(__n * sizeof(_Tp)));
+    6,489 ( 0.00%)  => ???:0x000000000010a460 (32x)
+        .                 }
+        .           
+        .                 // __p is not permitted to be a null pointer.
+        .                 void
+        .                 deallocate(_Tp* __p, size_type __t __attribute__ ((__unused__)))
+        .                 {
+        .           #if __cpp_aligned_new
+        .           	if (alignof(_Tp) > __STDCPP_DEFAULT_NEW_ALIGNMENT__)
+-- line 135 ----------------------------------------
+-- line 137 ----------------------------------------
+        .           	    ::operator delete(__p,
+        .           # if __cpp_sized_deallocation
+        .           			      __t * sizeof(_Tp),
+        .           # endif
+        .           			      std::align_val_t(alignof(_Tp)));
+        .           	    return;
+        .           	  }
+        .           #endif
+1,240,648 ( 0.15%)  	::operator delete(__p
+      118 ( 0.00%)  => ???:0x000000000010a470 (1x)
+        .           #if __cpp_sized_deallocation
+        .           			  , __t * sizeof(_Tp)
+        .           #endif
+        .           			 );
+        .                 }
+        .           
+        .           #if __cplusplus <= 201703L
+        .                 size_type
+-- line 153 ----------------------------------------
+-- line 154 ----------------------------------------
+        .                 max_size() const _GLIBCXX_USE_NOEXCEPT
+        .                 { return _M_max_size(); }
+        .           
+        .           #if __cplusplus >= 201103L
+        .                 template<typename _Up, typename... _Args>
+        .           	void
+        .           	construct(_Up* __p, _Args&&... __args)
+        .           	noexcept(std::is_nothrow_constructible<_Up, _Args...>::value)
+  713,173 ( 0.08%)  	{ ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+        .           
+        .                 template<typename _Up>
+        .           	void
+        .           	destroy(_Up* __p)
+        .           	noexcept(std::is_nothrow_destructible<_Up>::value)
+        .           	{ __p->~_Up(); }
+        .           #else
+        .                 // _GLIBCXX_RESOLVE_LIB_DEFECTS
+-- line 170 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/hashtable.h
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 300 ----------------------------------------
+        .           	// Allocate a node and construct an element within it.
+        .           	template<typename... _Args>
+        .           	  _Scoped_node(__hashtable_alloc* __h, _Args&&... __args)
+        .           	  : _M_h(__h),
+        .           	    _M_node(__h->_M_allocate_node(std::forward<_Args>(__args)...))
+        .           	  { }
+        .           
+        .           	// Destroy element and deallocate node.
+   57,206 ( 0.01%)  	~_Scoped_node() { if (_M_node) _M_h->_M_deallocate_node(_M_node); };
+        .           
+        .           	_Scoped_node(const _Scoped_node&) = delete;
+        .           	_Scoped_node& operator=(const _Scoped_node&) = delete;
+        .           
+        .           	__hashtable_alloc* _M_h;
+        .           	__node_ptr _M_node;
+        .                 };
+        .           
+-- line 316 ----------------------------------------
+-- line 414 ----------------------------------------
+        .                 _M_update_bbegin(__node_ptr __n)
+        .                 {
+        .           	_M_before_begin._M_nxt = __n;
+        .           	_M_update_bbegin();
+        .                 }
+        .           
+        .                 bool
+        .                 _M_uses_single_bucket(__buckets_ptr __bkts) const
+        1 ( 0.00%)        { return __builtin_expect(__bkts == &_M_single_bucket, false); }
+        .           
+        .                 bool
+        .                 _M_uses_single_bucket() const
+        .                 { return _M_uses_single_bucket(_M_buckets); }
+        .           
+        .                 __hashtable_alloc&
+        .                 _M_base_alloc() { return *this; }
+        .           
+        .                 __buckets_ptr
+        .                 _M_allocate_buckets(size_type __bkt_count)
+        .                 {
+       26 ( 0.00%)  	if (__builtin_expect(__bkt_count == 1, false))
+        .           	  {
+        .           	    _M_single_bucket = nullptr;
+       13 ( 0.00%)  	    return &_M_single_bucket;
+        .           	  }
+        .           
+        .           	return __hashtable_alloc::_M_allocate_buckets(__bkt_count);
+        .                 }
+        .           
+        .                 void
+        .                 _M_deallocate_buckets(__buckets_ptr __bkts, size_type __bkt_count)
+        .                 {
+       28 ( 0.00%)  	if (_M_uses_single_bucket(__bkts))
+        .           	  return;
+        .           
+        .           	__hashtable_alloc::_M_deallocate_buckets(__bkts, __bkt_count);
+        .                 }
+        .           
+        .                 void
+        .                 _M_deallocate_buckets()
+       28 ( 0.00%)        { _M_deallocate_buckets(_M_buckets, _M_bucket_count); }
+        .           
+        .                 // Gets bucket begin, deals with the fact that non-empty buckets contain
+        .                 // their before begin node.
+        .                 __node_ptr
+        .                 _M_bucket_begin(size_type __bkt) const;
+        .           
+        .                 __node_ptr
+        .                 _M_begin() const
+       14 ( 0.00%)        { return static_cast<__node_ptr>(_M_before_begin._M_nxt); }
+        .           
+        .                 // Assign *this using another _Hashtable instance. Whether elements
+        .                 // are copied or moved depends on the _Ht reference.
+        .                 template<typename _Ht>
+        .           	void
+        .           	_M_assign_elements(_Ht&&);
+        .           
+        .                 template<typename _Ht, typename _NodeGenerator>
+-- line 471 ----------------------------------------
+-- line 520 ----------------------------------------
+        .                 template<typename _InputIterator>
+        .           	_Hashtable(_InputIterator __first, _InputIterator __last,
+        .           		   size_type __bkt_count_hint,
+        .           		   const _Hash&, const _Equal&, const allocator_type&,
+        .           		   false_type __uks);
+        .           
+        .               public:
+        .                 // Constructor, destructor, assignment, swap
+        4 ( 0.00%)        _Hashtable() = default;
+        .           
+        .                 _Hashtable(const _Hashtable&);
+        .           
+        .                 _Hashtable(const _Hashtable&, const allocator_type&);
+        .           
+        .                 explicit
+        .                 _Hashtable(size_type __bkt_count_hint,
+        .           		 const _Hash& __hf = _Hash(),
+-- line 536 ----------------------------------------
+-- line 787 ----------------------------------------
+        .               private:
+        .                 // Bucket index computation helpers.
+        .                 size_type
+        .                 _M_bucket_index(const __node_value_type& __n) const noexcept
+        .                 { return __hash_code_base::_M_bucket_index(__n, _M_bucket_count); }
+        .           
+        .                 size_type
+        .                 _M_bucket_index(__hash_code __c) const
+  839,568 ( 0.10%)        { return __hash_code_base::_M_bucket_index(__c, _M_bucket_count); }
+        .           
+        .                 // Find and insert helper functions and types
+        .                 // Find the node before the one matching the criteria.
+        .                 __node_base_ptr
+        .                 _M_find_before_node(size_type, const key_type&, __hash_code) const;
+        .           
+        .                 template<typename _Kt>
+        .           	__node_base_ptr
+-- line 803 ----------------------------------------
+-- line 1520 ----------------------------------------
+        .           	  __ht.clear();
+        .           	}
+        .               }
+        .           
+        .             template<typename _Key, typename _Value, typename _Alloc,
+        .           	   typename _ExtractKey, typename _Equal,
+        .           	   typename _Hash, typename _RangeHash, typename _Unused,
+        .           	   typename _RehashPolicy, typename _Traits>
+   57,210 ( 0.01%)      _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+        .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+        .               ~_Hashtable() noexcept
+        .               {
+        .                 clear();
+        .                 _M_deallocate_buckets();
+        3 ( 0.00%)      }
+        .           
+        .             template<typename _Key, typename _Value, typename _Alloc,
+        .           	   typename _ExtractKey, typename _Equal,
+        .           	   typename _Hash, typename _RangeHash, typename _Unused,
+        .           	   typename _RehashPolicy, typename _Traits>
+        .               void
+        .               _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+        .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+-- line 1542 ----------------------------------------
+-- line 1825 ----------------------------------------
+        .           	   typename _RehashPolicy, typename _Traits>
+        .               auto
+        .               _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+        .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+        .               _M_find_before_node(size_type __bkt, const key_type& __k,
+        .           			__hash_code __code) const
+        .               -> __node_base_ptr
+        .               {
+1,679,136 ( 0.20%)        __node_base_ptr __prev_p = _M_buckets[__bkt];
+1,119,424 ( 0.13%)        if (!__prev_p)
+        .           	return nullptr;
+        .           
+1,255,998 ( 0.15%)        for (__node_ptr __p = static_cast<__node_ptr>(__prev_p->_M_nxt);;
+        .           	   __p = __p->_M_next())
+        .           	{
+        .           	  if (this->_M_equals(__k, __code, *__p))
+        .           	    return __prev_p;
+        .           
+  799,687 ( 0.09%)  	  if (!__p->_M_nxt || _M_bucket_index(*__p->_M_next()) != __bkt)
+        .           	    break;
+        .           	  __prev_p = __p;
+        .           	}
+        .           
+        .                 return nullptr;
+        .               }
+        .           
+        .             template<typename _Key, typename _Value, typename _Alloc,
+-- line 1851 ----------------------------------------
+-- line 1882 ----------------------------------------
+        .           	   typename _ExtractKey, typename _Equal,
+        .           	   typename _Hash, typename _RangeHash, typename _Unused,
+        .           	   typename _RehashPolicy, typename _Traits>
+        .               void
+        .               _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+        .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+        .               _M_insert_bucket_begin(size_type __bkt, __node_ptr __node)
+        .               {
+  343,275 ( 0.04%)        if (_M_buckets[__bkt])
+        .           	{
+        .           	  // Bucket is not empty, we just need to insert the new node
+        .           	  // after the bucket before begin.
+   57,100 ( 0.01%)  	  __node->_M_nxt = _M_buckets[__bkt]->_M_nxt;
+   57,100 ( 0.01%)  	  _M_buckets[__bkt]->_M_nxt = __node;
+        .           	}
+        .                 else
+        .           	{
+        .           	  // The bucket is empty, the new node is inserted at the
+        .           	  // beginning of the singly-linked list and the bucket will
+        .           	  // contain _M_before_begin pointer.
+   57,312 ( 0.01%)  	  __node->_M_nxt = _M_before_begin._M_nxt;
+   28,656 ( 0.00%)  	  _M_before_begin._M_nxt = __node;
+        .           
+   57,312 ( 0.01%)  	  if (__node->_M_nxt)
+        .           	    // We must update former begin bucket that is pointing to
+        .           	    // _M_before_begin.
+   28,655 ( 0.00%)  	    _M_buckets[_M_bucket_index(*__node->_M_next())] = __node;
+        .           
+   85,968 ( 0.01%)  	  _M_buckets[__bkt] = &_M_before_begin;
+        .           	}
+        .               }
+        .           
+        .             template<typename _Key, typename _Value, typename _Alloc,
+        .           	   typename _ExtractKey, typename _Equal,
+        .           	   typename _Hash, typename _RangeHash, typename _Unused,
+        .           	   typename _RehashPolicy, typename _Traits>
+        .               void
+-- line 1918 ----------------------------------------
+-- line 2006 ----------------------------------------
+        .           	   typename _RehashPolicy, typename _Traits>
+        .               auto
+        .               _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+        .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+        .               _M_insert_unique_node(size_type __bkt, __hash_code __code,
+        .           			  __node_ptr __node, size_type __n_elt)
+        .               -> iterator
+        .               {
+  171,618 ( 0.02%)        const __rehash_state& __saved_state = _M_rehash_policy._M_state();
+        .                 std::pair<bool, std::size_t> __do_rehash
+  343,236 ( 0.04%)  	= _M_rehash_policy._M_need_rehash(_M_bucket_count, _M_element_count,
+  632,388 ( 0.07%)  => ???:0x000000000010a4e0 (57,206x)
+        .           					  __n_elt);
+        .           
+  114,412 ( 0.01%)        if (__do_rehash.first)
+        .           	{
+       39 ( 0.00%)  	  _M_rehash(__do_rehash.second, __saved_state);
+2,912,912 ( 0.34%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_rehash(unsigned long, unsigned long const&) (13x)
+        .           	  __bkt = _M_bucket_index(__code);
+        .           	}
+        .           
+        .                 this->_M_store_code(*__node, __code);
+        .           
+        .                 // Always insert at the beginning of the bucket.
+        .                 _M_insert_bucket_begin(__bkt, __node);
+   57,206 ( 0.01%)        ++_M_element_count;
+        .                 return iterator(__node);
+        .               }
+        .           
+        .             template<typename _Key, typename _Value, typename _Alloc,
+        .           	   typename _ExtractKey, typename _Equal,
+        .           	   typename _Hash, typename _RangeHash, typename _Unused,
+        .           	   typename _RehashPolicy, typename _Traits>
+        .               auto
+-- line 2037 ----------------------------------------
+-- line 2313 ----------------------------------------
+        .           	   typename _Hash, typename _RangeHash, typename _Unused,
+        .           	   typename _RehashPolicy, typename _Traits>
+        .               void
+        .               _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+        .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+        .               clear() noexcept
+        .               {
+        .                 this->_M_deallocate_nodes(_M_begin());
+        5 ( 0.00%)        __builtin_memset(_M_buckets, 0,
+  681,851 ( 0.08%)  => ???:0x000000000010a3c0 (1x)
+        .           		       _M_bucket_count * sizeof(__node_base_ptr));
+        1 ( 0.00%)        _M_element_count = 0;
+        2 ( 0.00%)        _M_before_begin._M_nxt = nullptr;
+        .               }
+        .           
+        .             template<typename _Key, typename _Value, typename _Alloc,
+        .           	   typename _ExtractKey, typename _Equal,
+        .           	   typename _Hash, typename _RangeHash, typename _Unused,
+        .           	   typename _RehashPolicy, typename _Traits>
+        .               void
+        .               _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+-- line 2332 ----------------------------------------
+-- line 2347 ----------------------------------------
+        .           	_M_rehash_policy._M_reset(__saved_state);
+        .               }
+        .           
+        .             template<typename _Key, typename _Value, typename _Alloc,
+        .           	   typename _ExtractKey, typename _Equal,
+        .           	   typename _Hash, typename _RangeHash, typename _Unused,
+        .           	   typename _RehashPolicy, typename _Traits>
+        .               void
+      104 ( 0.00%)      _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+        .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+        .               _M_rehash(size_type __bkt_count, const __rehash_state& __state)
+        .               {
+        .                 __try
+        .           	{
+        .           	  _M_rehash_aux(__bkt_count, __unique_keys{});
+        .           	}
+        .                 __catch(...)
+        .           	{
+        .           	  // A failure here means that buckets allocation failed.  We only
+        .           	  // have to restore hash policy previous state.
+        .           	  _M_rehash_policy._M_reset(__state);
+        .           	  __throw_exception_again;
+        .           	}
+       78 ( 0.00%)      }
+        .           
+        .             // Rehash when there is no equivalent elements.
+        .             template<typename _Key, typename _Value, typename _Alloc,
+        .           	   typename _ExtractKey, typename _Equal,
+        .           	   typename _Hash, typename _RangeHash, typename _Unused,
+        .           	   typename _RehashPolicy, typename _Traits>
+        .               void
+        .               _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+        .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+        .               _M_rehash_aux(size_type __bkt_count, true_type /* __uks */)
+        .               {
+        .                 __buckets_ptr __new_buckets = _M_allocate_buckets(__bkt_count);
+        .                 __node_ptr __p = _M_begin();
+       13 ( 0.00%)        _M_before_begin._M_nxt = nullptr;
+       13 ( 0.00%)        std::size_t __bbegin_bkt = 0;
+  165,334 ( 0.02%)        while (__p)
+        .           	{
+        .           	  __node_ptr __next = __p->_M_next();
+        .           	  std::size_t __bkt
+        .           	    = __hash_code_base::_M_bucket_index(*__p, __bkt_count);
+  330,592 ( 0.04%)  	  if (!__new_buckets[__bkt])
+        .           	    {
+  130,740 ( 0.02%)  	      __p->_M_nxt = _M_before_begin._M_nxt;
+   65,370 ( 0.01%)  	      _M_before_begin._M_nxt = __p;
+   65,383 ( 0.01%)  	      __new_buckets[__bkt] = &_M_before_begin;
+  130,740 ( 0.02%)  	      if (__p->_M_nxt)
+   65,358 ( 0.01%)  		__new_buckets[__bbegin_bkt] = __p;
+  130,728 ( 0.02%)  	      __bbegin_bkt = __bkt;
+        .           	    }
+        .           	  else
+        .           	    {
+   34,556 ( 0.00%)  	      __p->_M_nxt = __new_buckets[__bkt]->_M_nxt;
+   34,556 ( 0.00%)  	      __new_buckets[__bkt]->_M_nxt = __p;
+        .           	    }
+        .           
+        .           	  __p = __next;
+        .           	}
+        .           
+        .                 _M_deallocate_buckets();
+       13 ( 0.00%)        _M_bucket_count = __bkt_count;
+       13 ( 0.00%)        _M_buckets = __new_buckets;
+        .               }
+        .           
+        .             // Rehash when there can be equivalent elements, preserve their relative
+        .             // order.
+        .             template<typename _Key, typename _Value, typename _Alloc,
+        .           	   typename _ExtractKey, typename _Equal,
+        .           	   typename _Hash, typename _RangeHash, typename _Unused,
+        .           	   typename _RehashPolicy, typename _Traits>
+-- line 2419 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/vector.tcc
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 190 ----------------------------------------
+        .           	    _GLIBCXX_MOVE3(__last, end(), __first);
+        .           	  _M_erase_at_end(__first.base() + (end() - __last));
+        .           	}
+        .                 return __first;
+        .               }
+        .           
+        .             template<typename _Tp, typename _Alloc>
+        .               vector<_Tp, _Alloc>&
+  851,067 ( 0.10%)      vector<_Tp, _Alloc>::
+        .               operator=(const vector<_Tp, _Alloc>& __x)
+        .               {
+  243,162 ( 0.03%)        if (&__x != this)
+        .           	{
+        .           	  _GLIBCXX_ASAN_ANNOTATE_REINIT;
+        .           #if __cplusplus >= 201103L
+        .           	  if (_Alloc_traits::_S_propagate_on_copy_assign())
+        .           	    {
+        .           	      if (!_Alloc_traits::_S_always_equal()
+        .           	          && _M_get_Tp_allocator() != __x._M_get_Tp_allocator())
+        .           	        {
+-- line 209 ----------------------------------------
+-- line 216 ----------------------------------------
+        .           		  this->_M_impl._M_finish = nullptr;
+        .           		  this->_M_impl._M_end_of_storage = nullptr;
+        .           		}
+        .           	      std::__alloc_on_copy(_M_get_Tp_allocator(),
+        .           				   __x._M_get_Tp_allocator());
+        .           	    }
+        .           #endif
+        .           	  const size_type __xlen = __x.size();
+  243,162 ( 0.03%)  	  if (__xlen > capacity())
+        .           	    {
+        .           	      pointer __tmp = _M_allocate_and_copy(__xlen, __x.begin(),
+        .           						   __x.end());
+  121,581 ( 0.01%)  	      std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+        .           			    _M_get_Tp_allocator());
+        .           	      _M_deallocate(this->_M_impl._M_start,
+        .           			    this->_M_impl._M_end_of_storage
+  128,748 ( 0.02%)  			    - this->_M_impl._M_start);
+  121,581 ( 0.01%)  	      this->_M_impl._M_start = __tmp;
+  243,162 ( 0.03%)  	      this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __xlen;
+        .           	    }
+        .           	  else if (size() >= __xlen)
+        .           	    {
+        .           	      std::_Destroy(std::copy(__x.begin(), __x.end(), begin()),
+        .           			    end(), _M_get_Tp_allocator());
+        .           	    }
+        .           	  else
+        .           	    {
+        .           	      std::copy(__x._M_impl._M_start, __x._M_impl._M_start + size(),
+        .           			this->_M_impl._M_start);
+        .           	      std::__uninitialized_copy_a(__x._M_impl._M_start + size(),
+        .           					  __x._M_impl._M_finish,
+        .           					  this->_M_impl._M_finish,
+        .           					  _M_get_Tp_allocator());
+        .           	    }
+  121,581 ( 0.01%)  	  this->_M_impl._M_finish = this->_M_impl._M_start + __xlen;
+        .           	}
+        .                 return *this;
+  729,486 ( 0.09%)      }
+        .           
+        .             template<typename _Tp, typename _Alloc>
+        .               void
+        .               vector<_Tp, _Alloc>::
+        .               _M_fill_assign(size_t __n, const value_type& __val)
+        .               {
+        .                 if (__n > capacity())
+        .           	{
+-- line 261 ----------------------------------------
+-- line 418 ----------------------------------------
+        .                 *__position = std::forward<_Arg>(__arg);
+        .           #endif
+        .               }
+        .           
+        .           #if __cplusplus >= 201103L
+        .             template<typename _Tp, typename _Alloc>
+        .               template<typename... _Args>
+        .                 void
+3,429,107 ( 0.41%)        vector<_Tp, _Alloc>::
+        .                 _M_realloc_insert(iterator __position, _Args&&... __args)
+        .           #else
+        .             template<typename _Tp, typename _Alloc>
+        .               void
+        .               vector<_Tp, _Alloc>::
+        .               _M_realloc_insert(iterator __position, const _Tp& __x)
+        .           #endif
+        .               {
+-- line 434 ----------------------------------------
+-- line 456 ----------------------------------------
+        .           	  __new_finish = pointer();
+        .           
+        .           #if __cplusplus >= 201103L
+        .           	  if _GLIBCXX17_CONSTEXPR (_S_use_relocate())
+        .           	    {
+        .           	      __new_finish = _S_relocate(__old_start, __position.base(),
+        .           					 __new_start, _M_get_Tp_allocator());
+        .           
+  623,474 ( 0.07%)  	      ++__new_finish;
+        .           
+        .           	      __new_finish = _S_relocate(__position.base(), __old_finish,
+        .           					 __new_finish, _M_get_Tp_allocator());
+        .           	    }
+        .           	  else
+        .           #endif
+        .           	    {
+        .           	      __new_finish
+-- line 472 ----------------------------------------
+-- line 493 ----------------------------------------
+        .           	  __throw_exception_again;
+        .           	}
+        .           #if __cplusplus >= 201103L
+        .                 if _GLIBCXX17_CONSTEXPR (!_S_use_relocate())
+        .           #endif
+        .           	std::_Destroy(__old_start, __old_finish, _M_get_Tp_allocator());
+        .                 _GLIBCXX_ASAN_ANNOTATE_REINIT;
+        .                 _M_deallocate(__old_start,
+  395,744 ( 0.05%)  		    this->_M_impl._M_end_of_storage - __old_start);
+  623,474 ( 0.07%)        this->_M_impl._M_start = __new_start;
+        .                 this->_M_impl._M_finish = __new_finish;
+  935,211 ( 0.11%)        this->_M_impl._M_end_of_storage = __new_start + __len;
+2,493,896 ( 0.30%)      }
+        .           
+        .             template<typename _Tp, typename _Alloc>
+        .               void
+        .               vector<_Tp, _Alloc>::
+        .               _M_fill_insert(iterator __position, size_type __n, const value_type& __x)
+        .               {
+        .                 if (__n != 0)
+        .           	{
+-- line 513 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/unordered_map.h
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 94 ----------------------------------------
+        .              *
+        .              *  Base is _Hashtable, dispatched at compile time via template
+        .              *  alias __umap_hashtable.
+        .              */
+        .             template<typename _Key, typename _Tp,
+        .           	   typename _Hash = hash<_Key>,
+        .           	   typename _Pred = equal_to<_Key>,
+        .           	   typename _Alloc = allocator<std::pair<const _Key, _Tp>>>
+        2 ( 0.00%)      class unordered_map
+20,868,951 ( 2.47%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::~_Hashtable() (1x)
+        .               {
+        .                 typedef __umap_hashtable<_Key, _Tp, _Hash, _Pred, _Alloc>  _Hashtable;
+        .                 _Hashtable _M_h;
+        .           
+        .               public:
+        .                 // typedefs:
+        .                 ///@{
+        .                 /// Public typedefs.
+-- line 110 ----------------------------------------
+-- line 972 ----------------------------------------
+        .                  *  data associated with the key specified in subscript.  If the key does
+        .                  *  not exist, a pair with that key is created using default values, which
+        .                  *  is then returned.
+        .                  *
+        .                  *  Lookup requires constant time.
+        .                  */
+        .                 mapped_type&
+        .                 operator[](const key_type& __k)
+1,119,424 ( 0.13%)        { return _M_h[__k]; }
+   18,754 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Map_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::vector<int, std::allocator<int> > > >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>, true>::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (30x)
+        .           
+        .                 mapped_type&
+        .                 operator[](key_type&& __k)
+        .                 { return _M_h[std::move(__k)]; }
+        .                 ///@}
+        .           
+        .                 ///@{
+        .                 /**
+-- line 988 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/char_traits.h
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 349 ----------------------------------------
+        .                 typedef streamoff         off_type;
+        .                 typedef mbstate_t         state_type;
+        .           #if __cpp_lib_three_way_comparison
+        .                 using comparison_category = strong_ordering;
+        .           #endif
+        .           
+        .                 static _GLIBCXX17_CONSTEXPR void
+        .                 assign(char_type& __c1, const char_type& __c2) _GLIBCXX_NOEXCEPT
+1,882,559 ( 0.22%)        { __c1 = __c2; }
+        .           
+        .                 static _GLIBCXX_CONSTEXPR bool
+        .                 eq(const char_type& __c1, const char_type& __c2) _GLIBCXX_NOEXCEPT
+        .                 { return __c1 == __c2; }
+        .           
+        .                 static _GLIBCXX_CONSTEXPR bool
+        .                 lt(const char_type& __c1, const char_type& __c2) _GLIBCXX_NOEXCEPT
+        .                 {
+-- line 365 ----------------------------------------
+-- line 366 ----------------------------------------
+        .           	// LWG 467.
+        .           	return (static_cast<unsigned char>(__c1)
+        .           		< static_cast<unsigned char>(__c2));
+        .                 }
+        .           
+        .                 static _GLIBCXX17_CONSTEXPR int
+        .                 compare(const char_type* __s1, const char_type* __s2, size_t __n)
+        .                 {
+  445,300 ( 0.05%)  	if (__n == 0)
+        .           	  return 0;
+        .           #if __cplusplus >= 201703L
+        .           	if (__builtin_constant_p(__n)
+        .           	    && __constant_char_array_p(__s1, __n)
+        .           	    && __constant_char_array_p(__s2, __n))
+        .           	  {
+        .           	    for (size_t __i = 0; __i < __n; ++__i)
+        .           	      if (lt(__s1[__i], __s2[__i]))
+        .           		return -1;
+        .           	      else if (lt(__s2[__i], __s1[__i]))
+        .           		return 1;
+        .           	    return 0;
+        .           	  }
+        .           #endif
+1,113,250 ( 0.13%)  	return __builtin_memcmp(__s1, __s2, __n);
+4,813,237 ( 0.57%)  => ???:0x000000000010a3a0 (222,650x)
+        .                 }
+        .           
+        .                 static _GLIBCXX17_CONSTEXPR size_t
+        .                 length(const char_type* __s)
+        .                 {
+        .           #if __cplusplus >= 201703L
+        .           	if (__constant_string_p(__s))
+        .           	  return __gnu_cxx::char_traits<char_type>::length(__s);
+-- line 397 ----------------------------------------
+-- line 423 ----------------------------------------
+        .           	  return __gnu_cxx::char_traits<char_type>::move(__s1, __s2, __n);
+        .           #endif
+        .           	return static_cast<char_type*>(__builtin_memmove(__s1, __s2, __n));
+        .                 }
+        .           
+        .                 static _GLIBCXX20_CONSTEXPR char_type*
+        .                 copy(char_type* __s1, const char_type* __s2, size_t __n)
+        .                 {
+   25,214 ( 0.00%)  	if (__n == 0)
+        .           	  return __s1;
+        .           #ifdef __cpp_lib_is_constant_evaluated
+        .           	if (std::is_constant_evaluated())
+        .           	  return __gnu_cxx::char_traits<char_type>::copy(__s1, __s2, __n);
+        .           #endif
+5,704,883 ( 0.68%)  	return static_cast<char_type*>(__builtin_memcpy(__s1, __s2, __n));
+  781,187 ( 0.09%)  => ???:0x000000000010a420 (57,206x)
+        .                 }
+        .           
+        .                 static _GLIBCXX20_CONSTEXPR char_type*
+        .                 assign(char_type* __s, size_t __n, char_type __a)
+        .                 {
+        .           	if (__n == 0)
+        .           	  return __s;
+        .           #ifdef __cpp_lib_is_constant_evaluated
+-- line 445 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/charconv.h
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 44 ----------------------------------------
+        .             // Generic implementation for arbitrary bases.
+        .             template<typename _Tp>
+        .               _GLIBCXX14_CONSTEXPR unsigned
+        .               __to_chars_len(_Tp __value, int __base = 10) noexcept
+        .               {
+        .                 static_assert(is_integral<_Tp>::value, "implementation bug");
+        .                 static_assert(is_unsigned<_Tp>::value, "implementation bug");
+        .           
+1,585,880 ( 0.19%)        unsigned __n = 1;
+        .                 const unsigned __b2 = __base  * __base;
+        .                 const unsigned __b3 = __b2 * __base;
+        .                 const unsigned long __b4 = __b3 * __base;
+        .                 for (;;)
+        .           	{
+4,210,416 ( 0.50%)  	  if (__value < (unsigned)__base) return __n;
+5,436,464 ( 0.64%)  	  if (__value < __b2) return __n + 1;
+        .           	  if (__value < __b3) return __n + 2;
+        .           	  if (__value < __b4) return __n + 3;
+  559,712 ( 0.07%)  	  __value /= __b4;
+        .           	  __n += 4;
+        .           	}
+        .               }
+        .           
+        .             // Write an unsigned integer value to the range [first,first+len).
+        .             // The caller is required to provide a buffer of exactly the right size
+        .             // (which can be determined by the __to_chars_len function).
+        .             template<typename _Tp>
+-- line 70 ----------------------------------------
+-- line 75 ----------------------------------------
+        .                 static_assert(is_unsigned<_Tp>::value, "implementation bug");
+        .           
+        .                 static constexpr char __digits[201] =
+        .           	"0001020304050607080910111213141516171819"
+        .           	"2021222324252627282930313233343536373839"
+        .           	"4041424344454647484950515253545556575859"
+        .           	"6061626364656667686970717273747576777879"
+        .           	"8081828384858687888990919293949596979899";
+1,825,352 ( 0.22%)        unsigned __pos = __len - 1;
+4,303,936 ( 0.51%)        while (__val >= 100)
+        .           	{
+        .           	  auto const __num = (__val % 100) * 2;
+        .           	  __val /= 100;
+        .           	  __first[__pos] = __digits[__num + 1];
+        .           	  __first[__pos - 1] = __digits[__num];
+        .           	  __pos -= 2;
+        .           	}
+3,650,704 ( 0.43%)        if (__val >= 10)
+        .           	{
+1,405,788 ( 0.17%)  	  auto const __num = __val * 2;
+4,404,052 ( 0.52%)  	  __first[1] = __digits[__num + 1];
+3,231,140 ( 0.38%)  	  __first[0] = __digits[__num];
+        .           	}
+        .                 else
+1,918,520 ( 0.23%)  	__first[0] = '0' + __val;
+        .               }
+        .           
+        .           } // namespace __detail
+        .           _GLIBCXX_END_NAMESPACE_VERSION
+        .           } // namespace std
+        .           #endif // C++11
+        .           #endif // _GLIBCXX_CHARCONV_H
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/stl_algobase.h
+--------------------------------------------------------------------------------
+Ir                 
+
+-- line 421 ----------------------------------------
+        .           	{
+        .           #if __cplusplus >= 201103L
+        .           	  using __assignable = conditional<_IsMove,
+        .           					   is_move_assignable<_Tp>,
+        .           					   is_copy_assignable<_Tp>>;
+        .           	  // trivial types can have deleted assignment
+        .           	  static_assert( __assignable::type::value, "type is not assignable" );
+        .           #endif
+  445,300 ( 0.05%)  	  const ptrdiff_t _Num = __last - __first;
+  688,522 ( 0.08%)  	  if (_Num)
+1,377,044 ( 0.16%)  	    __builtin_memmove(__result, __first, sizeof(_Tp) * _Num);
+      720 ( 0.00%)  => ???:0x000000000010a420 (30x)
+  667,950 ( 0.08%)  	  return __result + _Num;
+        .           	}
+        .               };
+        .           
+        .           _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+        .           
+        .             template<typename _Tp, typename _Ref, typename _Ptr>
+        .               struct _Deque_iterator;
+        .           
+-- line 440 ----------------------------------------
+-- line 915 ----------------------------------------
+        .             template<typename _ForwardIterator, typename _Tp>
+        .               _GLIBCXX20_CONSTEXPR
+        .               inline typename
+        .               __gnu_cxx::__enable_if<__is_scalar<_Tp>::__value, void>::__type
+        .               __fill_a1(_ForwardIterator __first, _ForwardIterator __last,
+        .           	      const _Tp& __value)
+        .               {
+        .                 const _Tp __tmp = __value;
+        2 ( 0.00%)        for (; __first != __last; ++__first)
+        4 ( 0.00%)  	*__first = __tmp;
+       21 ( 0.00%)  => ???:0x000000000010a3c0 (1x)
+        .               }
+        .           
+        .             // Specialization: for char types we can use memset.
+        .             template<typename _Tp>
+        .               _GLIBCXX20_CONSTEXPR
+        .               inline typename
+        .               __gnu_cxx::__enable_if<__is_byte<_Tp>::__value, void>::__type
+        .               __fill_a1(_Tp* __first, _Tp* __last, const _Tp& __c)
+-- line 932 ----------------------------------------
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./elf/./elf/dl-lookup.c
+  ./malloc/./malloc/arena.c
+  ./malloc/./malloc/malloc.c
+  ./string/../sysdeps/x86_64/multiarch/memcmp-avx2-movbe.S
+  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+234,800,446 (27.79%)  events annotated
+
