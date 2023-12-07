@@ -1,0 +1,150 @@
+#include <algorithm>
+#include <chrono>
+#include <fstream>
+#include <iostream>
+#include <vector>
+#include <omp.h>
+using namespace std;
+using namespace chrono;
+
+// Função para ler o grafo a partir do arquivo de entrada
+vector<vector<int>> lerGrafo(const string &nomeArquivo, int &numVertices) {
+  ifstream arquivo(nomeArquivo);
+  int numArestas;
+  arquivo >> numVertices >> numArestas;
+
+  vector<vector<int>> grafo(numVertices, vector<int>(numVertices, 0));
+
+  for (int i = 0; i < numArestas; ++i) {
+    int u, v;
+    arquivo >> u >> v;
+    grafo[u - 1][v - 1] = 1;
+    grafo[v - 1][u - 1] = 1; // O grafo é não direcionado
+  }
+
+  arquivo.close();
+
+  return grafo;
+}
+
+// Função recursiva para encontrar a clique máxima
+vector<int> encontrarCliqueMaximaRec(const vector<vector<int>> &grafo,
+                                     int verticeAtual, vector<int> &candidatos,
+                                     unordered_map<string, vector<int>> &memo) {
+
+  // Generate a unique key for this combination of verticeAtual and candidatos
+  string key = to_string(verticeAtual);
+  for (int candidate : candidatos) {
+    key += "_" + to_string(candidate);
+  }
+
+  // Check if the result is memoized
+  bool inMemo = memo.find(key) != memo.end();
+  vector<int> memoValue;
+  if (inMemo) {
+    #pragma omp critical
+    {
+      memoValue = memo[key];
+    }
+    return memoValue;
+  }
+
+  vector<int> cliqueMaximaCandidato;
+  cliqueMaximaCandidato.push_back(verticeAtual);
+
+  vector<int> novosCandidatos;
+
+  // Busca novos candidatos que são adjacentes a todos os membros
+  // da clique do candidato
+  for (auto u : candidatos) {
+    bool adjacenteATodos = true;
+
+    for (auto c : cliqueMaximaCandidato) {
+      if (grafo[u][c] == 0) {
+        adjacenteATodos = false;
+        break;
+      }
+    }
+
+    if (adjacenteATodos) {
+      novosCandidatos.push_back(u);
+    }
+  }
+
+  for (auto novoCandidato : novosCandidatos) {
+    vector<int> cliqueNovoCandidato =
+        encontrarCliqueMaximaRec(grafo, novoCandidato, novosCandidatos, memo);
+
+    bool podeAdicionar = true;
+
+    for (auto u : cliqueNovoCandidato) {
+      // Se não está ligado a alguém da clique máxima
+      // não pode adicionar
+      if (grafo[u][verticeAtual] == 0) {
+        podeAdicionar = false;
+        break;
+      }
+    }
+
+    if (podeAdicionar &&
+        cliqueNovoCandidato.size() + 1 > cliqueMaximaCandidato.size()) {
+      cliqueNovoCandidato.push_back(verticeAtual);
+      cliqueMaximaCandidato = cliqueNovoCandidato;
+    }
+  }
+
+  #pragma omp critical
+  {
+    memo[key] = cliqueMaximaCandidato;
+  }
+
+  return cliqueMaximaCandidato;
+}
+
+// Função principal para encontrar a clique máxima
+vector<int> encontrarCliqueMaxima(const vector<vector<int>> &grafo,
+                                  int numVertices) {
+  vector<int> cliqueAtual;
+  vector<int> melhorClique;
+  vector<int> candidatos;
+  unordered_map<string, vector<int>> memo; // Use a hash table for memoization
+  memo.clear();
+
+  for (int i = 0; i < numVertices; i++) {
+    candidatos.push_back(i);
+  }
+
+  #pragma omp parallel for 
+  for (auto candidato : candidatos) {
+    cliqueAtual = encontrarCliqueMaximaRec(grafo, candidato, candidatos, memo);
+
+    if (cliqueAtual.size() > melhorClique.size()) {
+      melhorClique = cliqueAtual;
+    }
+  }
+
+  return melhorClique;
+}
+
+int main() {
+  int numVertices;
+  vector<vector<int>> grafo = lerGrafo("grafo.txt", numVertices);
+
+  auto start = high_resolution_clock::now();
+
+  vector<int> cliqueMaxima = encontrarCliqueMaxima(grafo, numVertices);
+
+  auto stop = high_resolution_clock::now();
+  auto duration = duration_cast<milliseconds>(stop - start);
+
+  cout << "Execution time: " << duration.count() << " milliseconds" << endl;
+
+  cout << "Clique máxima: ";
+  for (auto vertice : cliqueMaxima) {
+    cout << vertice + 1 << " ";
+  }
+  cout << endl;
+  cout << "Tamanho clique máxima: " << cliqueMaxima.size() << endl;
+
+  return 0;
+}
