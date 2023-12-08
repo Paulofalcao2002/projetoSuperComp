@@ -1,8 +1,12 @@
+%%writefile forca-bruta-ingenua.cpp
+
 #include <algorithm>
 #include <fstream>
 #include <iostream>
 #include <vector>
+#include <chrono>
 using namespace std;
+using namespace chrono;
 
 // Função para ler o grafo a partir do arquivo de entrada
 vector<vector<int>> lerGrafo(const string &nomeArquivo, int &numVertices) {
@@ -71,14 +75,22 @@ vector<int> encontrarCliqueMaxima(const vector<vector<int>> &grafo) {
 int main() {
   int numVertices;
   vector<vector<int>> grafo = lerGrafo("grafo.txt", numVertices);
+  
+  auto start = high_resolution_clock::now();
 
   vector<int> cliqueMaxima = encontrarCliqueMaxima(grafo);
+
+  auto stop = high_resolution_clock::now();
+  auto duration = duration_cast<milliseconds>(stop - start);
+
+  cout << "Execution time: " << duration.count() << " milliseconds" << endl;
 
   cout << "Clique máxima: ";
   for (auto vertice : cliqueMaxima) {
     cout << vertice + 1 << " ";
   }
   cout << endl;
+  cout << "Tamanho clique máxima: " << cliqueMaxima.size() << endl;
 
   return 0;
 }
